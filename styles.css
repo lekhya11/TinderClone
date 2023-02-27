@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f7fa;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.side{
+    width: 35%;
+    height: 100%;
+}
+
+.profile-container{
+    display: flex;
+    background-image: linear-gradient(to right,#fd267d,#ff7854);
+}
+
+.side .profile-container img {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 9px;
+    border: 2px solid white;
+}
+
+.center-content{
+    background-color: rgb(217, 238, 238);
+    height: 100vh;
+    width: 65%;
+}
+
+.side .menu ul {
+    display: flex;
+    padding-left: 5px;
+}
+
+.side .menu ul li {
+    font-size: 10px;
+    margin: 10px;
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.active {
+   border-bottom: 3px solid #fd5068;
+   padding-bottom: 2px;
+}
+
+.side .friends-list {
+    display: flex;
+    padding: 5px;
+}
+
+.side .friends-list img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.side .friends-list h1 {
+    font-size: 14px;
+    font-weight: 900;
+    margin: 2px;
+}
+
+.side .friends-list p {
+    font-size: 11px;
+    margin:0;
+    margin-top: 2px;
+}
+
+
+.main-container .card {
+    position: relative;
+    height: 450px;
+   
+    margin-top: 50px;
+    margin-left: 250px;
+    
+}
+
+
+
+.center-content .card .user{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 rgb(0,20,20,0.5);
+}
+
+.center-content .card .user .profile {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.center-content .card .user .name {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing:0.5px ;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.center-content .card .user .name span {
+    font-size:  26px;
+}
+
+.center-content .card .local {
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.center-content .card .local i {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.center-content .card .local span {
+    color: white;
+    padding: 0 10px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.center-content .card .buttons {
+   display:  flex;
+   margin-left: 100px;
+   margin-top: 10px;
+   
+}
+
+
+.center-content .card .buttons .no i {
+    color: #fd2e79;
+    font-size: 30px;
+    
+}
+
+.center-content .card .buttons .star i {
+    color: #2bb1ff;
+    font-size: 22px;
+   
+}
+
+.center-content .card .buttons .heart i {
+    color: #11e298;
+    font-size: 22px;
+    
+}
+
+.center-content .card .buttons .star,.center-content .card .buttons .heart,.center-content .card .buttons .no{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 6px;
+    box-shadow: 0 1px 10px 0 rgba(0,20,20,0.1);
+    transition: 0.2 transform;
+}
+
+
+
+
+.center-content .card .buttons .star:hover,.center-content .card .buttons .heart:hover,.center-content .card .buttons .no:hover{
+   transform: scale(1.1);
+}
